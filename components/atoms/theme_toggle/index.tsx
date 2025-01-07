@@ -6,7 +6,6 @@ const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    // Check if the user has a preferred theme or default to light mode
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme) {
       setIsDarkMode(storedTheme === "dark");
@@ -16,7 +15,6 @@ const ThemeToggle = () => {
         document.documentElement.classList.remove("dark");
       }
     } else {
-      // Default to system preference (light/dark)
       const userPrefersDark = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
@@ -31,7 +29,6 @@ const ThemeToggle = () => {
     const newIsDarkMode = !isDarkMode;
     setIsDarkMode(newIsDarkMode);
 
-    // Toggle dark mode class
     if (newIsDarkMode) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
