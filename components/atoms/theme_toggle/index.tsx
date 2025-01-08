@@ -1,4 +1,5 @@
 "use client";
+import { CiDark, CiLight } from "react-icons/ci";
 
 import { useState, useEffect } from "react";
 
@@ -41,9 +42,9 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="px-4 py-2 bg-gray-800 text-white rounded"
+      className="p-2 bg-background-secondary-dark dark:bg-background-secondary-light rounded-xl text-2xl text-text-primary-dark dark:text-text-primary-light"
     >
-      {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      {isDarkMode ? <CiLight /> : <CiDark />}
     </button>
   );
 };
