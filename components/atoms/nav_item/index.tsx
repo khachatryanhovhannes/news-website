@@ -9,5 +9,9 @@ interface INavItemProps {
 export default function NavItem({ ...props }: INavItemProps) {
   const { label, path, isActive } = props;
 
-  return <Link href={path}>{label}</Link>;
+  return (
+    <Link className={`${isActive ? "text-white" : ""}`} href={path}>
+      {label}
+    </Link>
+  );
 }
