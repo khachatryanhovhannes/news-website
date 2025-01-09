@@ -1,14 +1,10 @@
-import { Logo, ThemeToggle } from "@/components/atoms";
-import { Navbar } from "@/components/molecules";
+import { Navbar, TopNav } from "@/components/molecules";
 
 export default function Header() {
   return (
     <header>
       <div>
-        <Logo />
-        <ThemeToggle />
-      </div>
-      <div>
+        <TopNav />
         <Navbar />
       </div>
     </header>
