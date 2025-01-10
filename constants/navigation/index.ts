@@ -6,11 +6,11 @@ const NAVIGATION = [
   {
     label: "Նորություններ",
     path: "/news",
-    children: [
+    child: [
       {
         label: "Հայկական",
         path: "/news/armenian",
-        children: [
+        child: [
           {
             label: "Ստարտափներ",
             path: "/news/armenian/startups",
@@ -24,7 +24,7 @@ const NAVIGATION = [
       {
         label: "Համաշխարհային",
         path: "/news/global",
-        children: [
+        child: [
           {
             label: "Կազմակերպություններ",
             path: "/news/global/organizations",
@@ -45,7 +45,7 @@ const NAVIGATION = [
     label: "Դասընթացներ",
     path: "/courses",
     icon: "courses",
-    children: [
+    child: [
       {
         label: "Անհատներ",
         path: "/courses/individuals",
@@ -63,12 +63,11 @@ const NAVIGATION = [
   {
     label: "Օգտակար Գործիքներ",
     path: "/tools",
-    icon: "tools",
   },
   {
     label: "Մեր Մասին",
     path: "/about",
-    children: [
+    child: [
       {
         label: "Կապ",
         path: "/about/contact",
@@ -86,7 +85,7 @@ const NAVIGATION = [
   {
     label: "Ռեսուրսներ",
     path: "/resources",
-    children: [
+    child: [
       {
         label: "AI Tools",
         path: "/resources/ai-tools",
