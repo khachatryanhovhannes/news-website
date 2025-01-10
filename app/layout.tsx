@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`antialiased`}>
         <div className="min-h-screen w-full bg-background-primary-light dark:bg-background-primary-dark text-text-primary-light dark:text-text-primary-dark">
-          <div className="mx-auto lg:w-[75%] border-2">
+          <div className="mx-auto lg:w-[85%] border-2">
             <BigBanner />
             <Header />
             {children}
