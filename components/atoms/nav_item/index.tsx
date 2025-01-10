@@ -3,15 +3,17 @@ import Link from "next/link";
 interface INavItemProps {
   label: string;
   path: string;
-  isActive: boolean;
+  child?: INavItemProps[];
 }
 
 export default function NavItem({ ...props }: INavItemProps) {
-  const { label, path, isActive } = props;
+  const { label, path } = props;
+
+  const isActive = false;
 
   return (
-    <Link className={`${isActive ? "text-white" : ""}`} href={path}>
-      {label}
+    <Link className={`w-full py-3 ${isActive ? "text-white" : ""}`} href={path}>
+      <div className="text-center">{label}</div>
     </Link>
   );
 }
