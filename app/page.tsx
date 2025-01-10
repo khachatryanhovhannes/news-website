@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main>
+    <main className="">
       <h1 className="text-4xl font-bold text-text-primary-light dark:text-text-primary-dark">
         Welcome to Tailwind CSS with Light & Dark Mode!
       </h1>
