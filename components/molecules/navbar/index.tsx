@@ -9,7 +9,7 @@ export default function Navbar() {
           label={nav_item.label}
           path={nav_item.path}
           key={nav_item.path}
-          child={nav_item?.children}
+          child={nav_item?.child}
         />
       ))}
     </nav>
