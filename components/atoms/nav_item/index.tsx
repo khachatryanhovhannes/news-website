@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { FaCaretDown } from "react-icons/fa";
 
@@ -12,13 +13,13 @@ interface INavItemProps {
 export default function NavItem({ ...props }: INavItemProps) {
   const { label, path, child } = props;
   const [isOpen, setIsOpen] = useState(false);
-
-  const isActive = false;
+  const pathname = usePathname();
+  const isActive = pathname === path;
 
   return (
     <div className="relative w-full group">
       <div className="cursor-pointer py-3">
-        <Link className={`w-full ${isActive ? "text-white" : ""}`} href={path}>
+        <Link className={`w-full ${isActive ? "underline underline-offset-4" : ""}`} href={path}>
           <button className="block w-full hover:text-primary ">
             <div className="flex items-center justify-center">
               {label}
@@ -56,7 +57,7 @@ export default function NavItem({ ...props }: INavItemProps) {
                   </button>
                 </Link>
 
-                {item.child && item.child.length > 0 && (
+                {/* {item.child && item.child.length > 0 && (
                   <div
                     className={`absolute left-full top-0 ${
                       isOpen ? "block" : "hidden"
@@ -78,7 +79,7 @@ export default function NavItem({ ...props }: INavItemProps) {
                       ))}
                     </ul>
                   </div>
-                )}
+                )} */}
               </li>
             ))}
           </ul>
