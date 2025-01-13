@@ -2,6 +2,7 @@ import ThemeToggle from "./theme_toggle";
 import NavItem from "./nav_item";
 import Logo from "./logo";
 import BigBanner from "./big_banner";
-import SocialIcons from "./social_icons/index";
+import SocialIcons from "./social_icons";
+import PageHeading from "./page_heading";
 
-export { ThemeToggle, NavItem, Logo, BigBanner, SocialIcons };
+export { ThemeToggle, NavItem, Logo, BigBanner, SocialIcons, PageHeading };
