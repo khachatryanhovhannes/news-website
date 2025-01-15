@@ -42,7 +42,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 bg-background-secondary-dark dark:bg-background-secondary-light rounded-xl text-2xl text-text-primary-dark dark:text-text-primary-light"
+      className="p-2  rounded-xl text-2xl text-bg-primary-dark dark:text-bg-primary-light border dark:border-text-primary-dark border-text-primary-light"
     >
       {isDarkMode ? <CiLight /> : <CiDark />}
     </button>
