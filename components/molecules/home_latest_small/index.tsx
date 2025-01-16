@@ -1,33 +1,47 @@
 import Link from "next/link";
 
-export default function HomeLatestSmall() {
+const info = {
+  title: "Apple Next-Generation AR Glasses",
+  desc: "Introducing the latest in AR glasses from Apple. These state-of-the-art devices will transform your gaming experience. Experience firsthand what's possible with Apple's revolutionary AR technology.",
+  keywords: [
+    "#Apple",
+    "#ARGlasses",
+    "#Augmented Reality",
+    "#Innovation",
+    "#TechNews",
+  ],
+  date: "10.01.2025",
+};
+
+export default function HomeLatestSmall({ image }: { image: string }) {
+  const { title, keywords } = info;
+
   return (
-      <article
-          className="w-full bg-white shadow-lg rounded-lg overflow-hidden bg-cover"
-          style={{
-              backgroundImage: "url('images/appleProduct.jpg')",
-              aspectRatio: "3 / 2",
-          }}
-      >
-          <div className="flex flex-col justify-between relative w-full h-full bg-black bg-opacity-50">
-              <div className="right-0 pr-5 pt-2">
-                  <p><Link href="https://google.com"/> #Apple #ARGlasses #AugmentedReality #Innovation #TechNews</p>
-              </div>
-              <div className="flex flex-col justify-between  p-2">
-                  <div className="pb-2  border-2 rounded-lg text-xl text-center pt-2 ">
-                      <p>Apple Unveils Next-Generation AR Glasses</p>
-                  </div>
-                  <div className="flex flex-row justify-between tracking-tight md:tracking-wide">
-                      <p> Apple has announced its latest innovation: augmented reality (AR) glasses that seamlessly
-                          integrate digital information into the physical world. These glasses feature a lightweight
-                          design, high-resolution displays, and advanced sensors, aiming to revolutionize user
-                          interaction with technology.</p>
-                      <p className="border-2 h-8 rounded-lg mt-1">10.01.2025</p>
-                  </div>
-              </div>
+    <article
+      className="w-full bg-white shadow-lg rounded-lg overflow-hidden bg-cover text-black dark:text-white"
+      style={{
+        backgroundImage: `url('${image}')`,
+        aspectRatio: "3 / 2",
+      }}
+    >
+      <div className="flex flex-col justify-between w-full h-full bg-opacity-15 bg-white dark:bg-black dark:bg-opacity-60">
+        <div className="flex flex-col items-end p-2"></div>
 
+        <div className="m-2 p-2 bg-white dark:bg-transparent rounded-md bg-opacity-60">
+          <div className="flex gap-1">
+            {keywords.slice(0, 2).map((keyword, index) => (
+              <Link
+                href={`/search?q=${keyword}`}
+                key={index}
+                className="inline-block px-2 py-1 text-xs font-semibold tracking-wider bg-gradient-to-r from-green-400 to-blue-500 rounded-full"
+              >
+                {keyword}
+              </Link>
+            ))}
           </div>
-
-      </article>
+          <h3 className="text-base mt-1">{title}...</h3>
+        </div>
+      </div>
+    </article>
   );
 }
