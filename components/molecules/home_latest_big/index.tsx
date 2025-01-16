@@ -27,7 +27,7 @@ export default function HomeLatestBig() {
           <p className="rounded-lg mt-1 ">{date}</p>
         </div>
 
-        <div className="p-4">
+        <div className="m-2 p-2 bg-white dark:bg-transparent rounded-md bg-opacity-60">
           <div className="flex gap-1">
             {keywords.map((keyword, index) => (
               <Link
@@ -42,7 +42,6 @@ export default function HomeLatestBig() {
           <h3 className="text-3xl mt-3">{title}</h3>
           <p className="mt-1">
             {desc.length > 120 ? desc.substring(0, 120) + "..." : desc}{" "}
-            <Link href="/">Read More</Link>
           </p>
         </div>
       </div>
