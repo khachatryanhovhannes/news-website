@@ -22,7 +22,7 @@ export default function HomeLatestBig() {
         backgroundImage: "url('images/appleProduct.jpg')",
       }}
     >
-      <div className="flex flex-col justify-between w-full h-full bg-opacity-60 bg-white dark:bg-black dark:bg-opacity-60">
+      <div className="flex flex-col justify-between w-full h-full bg-opacity-15 bg-white dark:bg-black dark:bg-opacity-60">
         <div className="flex flex-col items-end p-5">
           <p className="rounded-lg mt-1 ">{date}</p>
         </div>
