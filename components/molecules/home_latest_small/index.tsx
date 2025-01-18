@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const info = {
-  title: "Apple Next-Generation AR Glasses",
+  title: "Apple Next-Generation AR Glasses. Introducing the latest in AR glasses from Apple. ",
   desc: "Introducing the latest in AR glasses from Apple. These state-of-the-art devices will transform your gaming experience. Experience firsthand what's possible with Apple's revolutionary AR technology.",
   keywords: [
     "#Apple",
