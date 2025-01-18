@@ -17,6 +17,10 @@ export default function NavItem({ ...props }: INavItemProps) {
   const pathname = usePathname();
   const isActive = pathname === path;
 
+  const handleToggleOpen = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="relative w-full group">
       <div className="cursor-pointer py-3 flex justify-center flex-row">
@@ -35,21 +39,38 @@ export default function NavItem({ ...props }: INavItemProps) {
           </button>
         </Link>
         {child && child.length > 0 && (
-          <button>
-            <FaCaretDown className="ml-2 transition-transform group-hover:rotate-180 lg:hidden" />
+          <button onClick={handleToggleOpen}>
+            <FaCaretDown
+              className={`ml-2 transition-transform ${
+                isOpen && "rotate-180"
+              } lg:hidden border-2 dark:border-text-primary-dark border-text-primary-light`}
+            />
           </button>
         )}
       </div>
+      {isOpen && (
+        <div className="text-center">
+          <ul className="py-2 text-sm bg-background-secondary-light dark:bg-background-secondary-dark">
+            {child?.map((item, index) => (
+              <li key={index} className="relative">
+                <Link href={item.path} className="block px-4 py-2">
+                  <button className="block w-full hover:text-primary">
+                    <div className="flex items-center justify-center">
+                      {item.label}
+                    </div>
+                  </button>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       {child && child.length > 0 && (
         <div className="pt-2 absolute top-full left-0 z-10 hidden lg:group-hover:block rounded-lg shadow w-44">
           <ul className="py-2 text-sm bg-background-secondary-light dark:bg-background-secondary-dark">
             {child.map((item, index) => (
-              <li
-                key={index}
-                className="relative"
-                onMouseEnter={() => setIsOpen(!isOpen)}
-              >
+              <li key={index} className="relative">
                 <Link href={item.path} className="block px-4 py-2">
                   <button className="block w-full hover:text-primary">
                     <div className="flex items-center justify-center">
