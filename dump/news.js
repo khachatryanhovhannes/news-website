@@ -1,5 +1,6 @@
 export const NEWS = [
   {
+    id: 0,
     title: 'React Hooks: A Complete Guide',
     date: '2022-01-01',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis velit id neque consectetur viverra. In malesuada sapien ac velit rutrum, at laoreet neque faucibus.',
@@ -9,6 +10,7 @@ export const NEWS = [
   },
 
   {
+    id: 1,
     title: 'React Hooks: A Complete Guide',
     date: '2022-01-01',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis velit id neque consectetur viverra. In malesuada sapien ac velit rutrum, at laoreet neque faucibus.',
@@ -18,6 +20,7 @@ export const NEWS = [
   },
 
   {
+    id: 2,
     title: 'React Hooks: A Complete Guide',
     date: '2022-01-01',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis velit id neque consectetur viverra. In malesuada sapien ac velit rutrum, at laoreet neque faucibus.',
@@ -27,6 +30,7 @@ export const NEWS = [
   },
 
   {
+    id: 3,
     title: 'React Hooks: A Complete Guide',
     date: '2022-01-01',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis velit id neque consectetur viverra. In malesuada sapien ac velit rutrum, at laoreet neque faucibus.',
