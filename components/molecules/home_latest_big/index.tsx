@@ -28,7 +28,7 @@ export default function HomeLatestBig() {
         </div>
 
         <div className="m-2 p-2 bg-white dark:bg-transparent rounded-md bg-opacity-60">
-          <div className="flex gap-1">
+          <div className="flex gap-1 flex-wrap">
             {keywords.map((keyword, index) => (
               <Link
                 href={`/search?q=${keyword}`}

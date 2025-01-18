@@ -2,7 +2,7 @@ import { HomeLatestBig, HomeLatestSmall } from "@/components/molecules";
 
 export default function HomeLatest() {
   return (
-    <section className="grid-cols-2 w-full grid gap-7">
+    <section className="grid-cols-1 xl:grid-cols-2 w-full grid gap-7">
       <HomeLatestBig />
       <section className="grid-cols-2 grid gap-7">
         <HomeLatestSmall image="https://avatars.mds.yandex.net/i?id=fd236fdd1cfcc621ff050f4579b37cfbcc5dc804-9880043-images-thumbs&n=13" />
