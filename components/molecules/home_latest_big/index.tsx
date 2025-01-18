@@ -28,7 +28,7 @@ export default function HomeLatestBig() {
         </div>
 
         <div className="m-2 p-2 bg-white dark:bg-transparent rounded-md bg-opacity-60">
-          <div className="flex gap-1">
+          <div className="flex gap-1 flex-wrap">
             {keywords.map((keyword, index) => (
               <Link
                 href={`/search?q=${keyword}`}
@@ -39,7 +39,7 @@ export default function HomeLatestBig() {
               </Link>
             ))}
           </div>
-          <h3 className="text-3xl mt-3">{title}</h3>
+          <h3 className="text-xl md:text-3xl mt-3">{title}</h3>
           <p className="mt-1">
             {desc.length > 120 ? desc.substring(0, 120) + "..." : desc}
           </p>
