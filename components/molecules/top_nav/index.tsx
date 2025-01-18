@@ -2,9 +2,9 @@ import { Logo, SocialIcons, ThemeToggle } from "@/components/atoms";
 
 export default function TopNav() {
   return (
-    <div className="bg-background-primary-light dark:bg-background-primary-dark flex justify-between items-center p-2">
+    <div className="lg:bg-background-primary-light lg:dark:bg-background-primary-dark flex justify-between items-center p-4 ">
       <Logo />
-      <div className="flex items-center gap-5">
+      <div className="lg:flex items-center gap-4 md:gap-6 hidden">
         <SocialIcons />
         <ThemeToggle />
       </div>
