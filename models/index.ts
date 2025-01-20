@@ -1,3 +1,3 @@
-import { INewsItem } from "./interfaces/index";
+import { INewsItem, IEvent } from "./interfaces";
 
-export type { INewsItem };
+export type { INewsItem, IEvent };
