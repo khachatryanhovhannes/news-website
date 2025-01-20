@@ -7,3 +7,13 @@ export interface INewsItem {
   path: string;
   date: string;
 }
+
+export interface IEvent {
+  id: number;
+  date: string;
+  title: string;
+  location: string;
+  image: string;
+  description: string;
+  link: string;
+}
