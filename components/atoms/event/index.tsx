@@ -1,17 +1,12 @@
+import { IEvent } from "@/models";
 import Image from "next/image";
 
 interface IEventProps {
-  id: number;
-  date: string;
-  title: string;
-  location: string;
-  image: string;
-  description: string;
-  link: string;
+  event: IEvent;
 }
 
 export default function Event({ ...props }: IEventProps) {
-  const { date, title, location, image, description, link } = props;
+  const { date, title, location, image, description, link } = props.event;
 
   return (
     <div className="p-4 border rounded-lg shadow hover:shadow-md transition-shadow ">
