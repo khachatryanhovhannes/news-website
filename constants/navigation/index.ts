@@ -61,10 +61,6 @@ const NAVIGATION = [
     path: "/events",
   },
   {
-    label: "Օգտակար Գործիքներ",
-    path: "/tools",
-  },
-  {
     label: "Մեր Մասին",
     path: "/about",
     child: [
@@ -93,6 +89,10 @@ const NAVIGATION = [
       {
         label: "Ուսումնական ռեսուրսներ",
         path: "/about/educational-resources",
+      },
+      {
+        label: "Օգտակար Գործիքներ",
+        path: "/tools",
       },
     ],
   },
