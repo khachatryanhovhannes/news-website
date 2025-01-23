@@ -1,5 +1,6 @@
 export const resources = [
   {
+    id: 0,
     page: "ai-tools",
     title: "ChatGPT",
     description:
@@ -9,6 +10,7 @@ export const resources = [
     content: "",
   },
   {
+    id: 1,
     page: "ai-tools",
     title: "DALL·E",
     description: "Create AI-generated images from text prompts.",
@@ -17,6 +19,7 @@ export const resources = [
     content: "",
   },
   {
+    id: 2,
     page: "ai-tools",
     title: "TensorFlow",
     description:
@@ -26,6 +29,7 @@ export const resources = [
     content: "",
   },
   {
+    id: 3,
     page: "educational-resources",
     title: "Coursera AI Courses",
     description:
@@ -35,6 +39,7 @@ export const resources = [
     content: "",
   },
   {
+    id: 4,
     page: "educational-resources",
     title: "edX AI Program",
     description: "Comprehensive AI programs offered by global institutions.",
@@ -43,6 +48,7 @@ export const resources = [
     content: "",
   },
   {
+    id: 5,
     page: "educational-resources",
     title: "AI For Everyone by Andrew Ng",
     description:
@@ -52,6 +58,7 @@ export const resources = [
     content: "",
   },
   {
+    id: 6,
     page: "tools",
     title: "Notion",
     description:
@@ -61,6 +68,7 @@ export const resources = [
     content: "",
   },
   {
+    id: 7,
     page: "tools",
     title: "Zapier",
     description: "Automate workflows by connecting different apps and tools.",
@@ -69,6 +77,7 @@ export const resources = [
     content: "",
   },
   {
+    id: 8,
     page: "tools",
     title: "Canva",
     description:
