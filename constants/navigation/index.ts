@@ -88,11 +88,11 @@ const NAVIGATION = [
       },
       {
         label: "Ուսումնական ռեսուրսներ",
-        path: "/about/educational-resources",
+        path: "/resources/educational-resources",
       },
       {
         label: "Օգտակար Գործիքներ",
-        path: "/tools",
+        path: "/resources/tools",
       },
     ],
   },
