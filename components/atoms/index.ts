@@ -5,6 +5,7 @@ import BigBanner from "./big_banner";
 import SocialIcons from "./social_icons";
 import PageHeading from "./page_heading";
 import NewsCard from "./news_card";
+import Event from "./event";
 
 export {
   ThemeToggle,
@@ -14,4 +15,5 @@ export {
   SocialIcons,
   PageHeading,
   NewsCard,
+  Event,
 };
